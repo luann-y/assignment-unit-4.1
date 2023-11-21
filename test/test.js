@@ -1,6 +1,6 @@
 /**
  * We have to do a bit of work upfront to allow the tests
- * to run in the browser and in Node.js. 
+ * to run in the browser and in Node.js.
  */
 let assert, expect;
 let testItems = {};
