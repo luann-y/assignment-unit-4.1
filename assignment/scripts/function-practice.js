@@ -71,15 +71,27 @@ console.log('Is -12 a positive number?', isPositive(-12));
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`
 
+// function getLast(array) {
+//   if (array.length === 0) {
+//     return undefined;
+//   }
+//   return array.pop();
+// }
+
+// console.log('My Original Array = [12, 432, 94, 2, 1]');
+// console.log('My Last Number in the Array=', getLast([12, 432, 94, 2, 1]));
+// console.log('Empty Array', getLast([]));
+
+
 function getLast(array) {
   if (array.length === 0) {
     return undefined;
   }
-  return array.pop();
+  return array[array.length-1];
 }
 
-console.log('My Original Array = [12, 432, 94, 2, 1]');
-console.log('My Last Number in the Array=', getLast([12, 432, 94, 2, 1]));
+console.log('My Original Array [12, 432, 94, 2, 1]');
+console.log('My last number in my array is', getLast([12, 432, 94, 2, 1]));
 console.log('Empty Array', getLast([]));
 
 // 7. Function to find a value in an array. Return true if the
@@ -91,15 +103,13 @@ function find(value, array) {
     if (array[i] === value) {
       return true;
     }
-    else {
+  }
       return false;
     }
-  }
-}
 
 
-// let findTheValue= find(23, [23, 9, 2, 499, 0, 328]);
-console.log('Is 23 in the array of [23, 9, 2, 499, 0, 328]?', find(23, [23, 9, 2, 499, 0, 328]));
+let findTheValue= find(23, [23, 9, 2, 499, 0, 328]);
+console.log('Is 23 in the array of [23, 9, 2, 499, 0, 328]?', findTheValue);
 
 // ----------------------
 // Stretch Goals
